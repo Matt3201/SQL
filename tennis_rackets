@@ -1,0 +1,24 @@
+CREATE TABLE tennis_rackets (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER, head_size INTEGER, length INTEGER, stiffness INTEGER, composition TEXT);
+
+INSERT INTO tennis_rackets VALUES (1, "Babolat Pure Aero Team 2023", 239,100,27,67,"Graphite");
+INSERT INTO tennis_rackets VALUES (2, "Babolat EVO Drive Lite", 127,104,27,67,"Graphite");
+INSERT INTO tennis_rackets VALUES (3, "Head Boom Team 2022", 209.00,102,27,66,"Graphene 360+/Graphite");
+INSERT INTO tennis_rackets VALUES (4, "Head Extreme Team 2022",239.00,100,27,61,"Graphene 360+/Graphite");
+INSERT INTO tennis_rackets VALUES (5, "Wilson Clash 100 v2",269.00,100,27,57,"Graphite");
+INSERT INTO tennis_rackets VALUES (6, "Wilson Ultra 100L v3",199.00,100,27,68,"Carbon Fiber Graphite");
+INSERT INTO tennis_rackets VALUES (7, "Prince Warrior 100 (285g)", 99.00,100,27,65,"Graphite");
+INSERT INTO tennis_rackets VALUES (8, "Prince Ripstick 100 280g", 199.00,100,27,63,"TexTreme/Twaron/Graphite");
+INSERT INTO tennis_rackets VALUES (9, "Yonex ASTREL 100",295.00,100,27,68,"Graphite");
+INSERT INTO tennis_rackets VALUES (10, "Yonex EZONE Ace 2022", 104,102,27,66,"Graphite");
+INSERT INTO tennis_rackets VALUES (11, "Tecnifibre TF-X1 285",229,100,27,71,"Graphite");
+INSERT INTO tennis_rackets VALUES (12, "Tecnifibre Tempo 298 Iga", 229,98,27,71,"Dynacore/Graphite");
+INSERT INTO tennis_rackets VALUES (13, "Dunlop SX 300 Lite",199,100,27,63,"Sonic Core Infinergy/Graphite");
+INSERT INTO tennis_rackets VALUES (14, "Solinco Blackout 285", 219.99,100,27,70,"Sonic Core Infinergy/Graphite");
+INSERT INTO tennis_rackets VALUES (15, "Dunlop CX 200 OS",199,105,27,61,"Sonic Core Infinergy/Graphite");
+
+
+SELECT * FROM tennis_rackets;
+SELECT * FROM tennis_rackets ORDER by cost;
+
+SELECT * FROM tennis_rackets;
+SELECT SUM(cost) FROM tennis_rackets;
